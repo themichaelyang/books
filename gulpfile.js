@@ -8,7 +8,8 @@ const dist = 'dist/';
 
 const paths = {
   scss: src + '**/*.scss',
-  html: src + '**/*.html'
+  html: src + '**/*.html',
+  fonts: src + '**/*.woff*'
 }
 
 gulp.task('html', () => {
@@ -24,7 +25,12 @@ gulp.task('scss', () => {
     .pipe(gulp.dest(dist));
 });
 
-gulp.task('default', ['scss', 'html']);
+gulp.task('fonts', () => {
+  return gulp.src(paths.fonts)
+    .pipe(gulp.dest(dist));
+});
+
+gulp.task('default', ['scss', 'html', 'fonts']);
 
 gulp.task('watch', ['default'], () => {
   gulp.watch(paths.scss, ['scss']);
