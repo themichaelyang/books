@@ -31,7 +31,7 @@
 
 @font-face {
   font-family: "Cooper Hewitt";
-  src: url("fonts/cooper-hewitt/cooperhewitt-medium-webfont.woff2") format("woff2"), url("fonts/cooper-hewitt/cooperhewitt-medium-webfont.woff") format("woff");
+  src: url("../fonts/cooper-hewitt/cooperhewitt-medium-webfont.woff2") format("woff2"), url("../fonts/cooper-hewitt/cooperhewitt-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
