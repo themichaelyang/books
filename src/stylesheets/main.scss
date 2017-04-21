@@ -26,7 +26,8 @@ main {
     position: static;
   }
   @media (max-width: $breakpoint-small) {
-    padding: 8rem 2rem;
+    width: 83%;
+    padding: 8rem 0;
   }
 }
 
