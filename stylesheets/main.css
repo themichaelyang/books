@@ -19,7 +19,8 @@ main {
       position: static; } }
   @media (max-width: 600px) {
     main {
-      padding: 8rem 2rem; } }
+      width: 83%;
+      padding: 8rem 0; } }
 
 header {
   padding-bottom: 6rem;
