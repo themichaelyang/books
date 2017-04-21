@@ -1,5 +1,6 @@
-$title-type: "Cooper Hewitt";
-$content-type: "DejaVu Serif";
+$title-font: "Cooper Hewitt";
+$content-font: "DejaVu Serif L";
+$breakpoint-medium: 1100px;
 
 html {
   font-size: 17px;
@@ -8,14 +9,20 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: $content-type;
+  font-family: $content-font;
 }
 
 main {
-  padding-top: 2rem;
-  max-width: 38rem;
+  padding: 8rem 0;
+  max-width: 40rem;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  right: 10rem;
+
+  @media (max-width: $breakpoint-medium) {
+    position: static;
+  }
 }
 
 header, p {
@@ -23,8 +30,7 @@ header, p {
 }
 
 header {
-  padding-bottom: 2rem;
-  text-align: center;
+  padding-bottom: 4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,20 +38,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  line-height: 1.5em;
+  line-height: 1.6em;
   margin: 0;
   margin-bottom: 1rem;
+  font-stretch: condensed;
 }
 
 .title {
-  font-family: $title-type;
+  font-family: $title-font;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.025em;
 }
 
 .author {
-  font-family: $title-type;
+  font-family: $title-font;
   font-weight: 500;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.025em;
 }
