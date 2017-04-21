@@ -1,0 +1,51 @@
+$title-type: "Cooper Hewitt";
+$content-type: "DejaVu Serif";
+
+html {
+  font-size: 17px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $content-type;
+}
+
+main {
+  padding-top: 2rem;
+  max-width: 38rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header, p {
+  padding: 0 2rem;
+}
+
+header {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: $title-type;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.75rem;
+}
+
+.author {
+  font-family: $title-type;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+}
