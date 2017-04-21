@@ -1,52 +1,51 @@
 @font-face {
-    font-family: "DejaVu Serif Condensed L";
-    src: url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-bold-webfont.woff2") format("woff2"),
-         url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-bold-webfont.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
+  font-family: "DejaVu Serif Condensed L";
+  src: url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-bold-webfont.woff2") format("woff2"),
+  url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "DejaVu Serif Condensed L";
-    src: url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-italic-webfont.woff2") format("woff2"),
-         url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-italic-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: italic;
+  font-family: "DejaVu Serif Condensed L";
+  src: url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-italic-webfont.woff2") format("woff2"),
+  url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "DejaVu Serif Condensed L";
-    src: url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-webfont.woff2") format("woff2"),
-         url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "DejaVu Serif Condensed L";
+  src: url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-webfont.woff2") format("woff2"),
+  url("../fonts/dejavu-serif-cond/dejavuserifcondensedl-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Cooper Hewitt";
-    src: url("../fonts/cooper-hewitt/cooperhewitt-bold-webfont.woff2") format("woff2"),
-         url("../fonts/cooper-hewitt/cooperhewitt-bold-webfont.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: "Cooper Hewitt";
-    src: url("../fonts/cooper-hewitt/cooperhewitt-heavy-webfont.woff2") format("woff2"),
-         url("../fonts/cooper-hewitt/cooperhewitt-heavy-webfont.woff") format("woff");
-    font-weight: 800;
-    font-style: normal;
+  font-family: "Cooper Hewitt";
+  src: url("../fonts/cooper-hewitt/cooperhewitt-bold-webfont.woff2") format("woff2"),
+  url("../fonts/cooper-hewitt/cooperhewitt-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 
 }
 
 @font-face {
-    font-family: "Cooper Hewitt";
-    src: url("../fonts/cooper-hewitt/cooperhewitt-medium-webfont.woff2") format("woff2"),
-         url("../fonts/cooper-hewitt/cooperhewitt-medium-webfont.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Cooper Hewitt";
+  src: url("../fonts/cooper-hewitt/cooperhewitt-heavy-webfont.woff2") format("woff2"),
+  url("../fonts/cooper-hewitt/cooperhewitt-heavy-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
 
+}
+
+@font-face {
+  font-family: "Cooper Hewitt";
+  src: url("../fonts/cooper-hewitt/cooperhewitt-medium-webfont.woff2") format("woff2"),
+  url("../fonts/cooper-hewitt/cooperhewitt-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 
 $title-font: "Cooper Hewitt";
@@ -83,7 +82,7 @@ main {
 }
 
 // header, p {
-  // padding: 0 2rem;
+// padding: 0 2rem;
 // }
 
 header {
@@ -140,7 +139,7 @@ p {
     font-size: 1.4rem;
     left: -2rem;
     top: -0.2rem;
-    color: lighten($brick, 12%);;
+    color: lighten($brick, 12%);
 
     @media (max-width: $breakpoint-medium) {
       position: static;
@@ -151,4 +150,48 @@ p {
 
 blockquote {
   padding: 1rem 0;
+}
+
+.small-caps {
+  font-feature-settings: 'smcp';
+}
+
+.pull-double {
+  margin-left: -.38em;
+}
+
+.push-double {
+  margin-right: .38em;
+}
+
+.pull-single {
+  margin-left: -.15em;
+}
+
+.push-single {
+  margin-right: .15em;
+}
+
+.pull-T, .pull-V, .pull-W, .pull-Y {
+  margin-left: -.07em;
+}
+
+.push-T, .push-V, .push-W, .push-Y {
+  margin-right: .07em;
+}
+
+.pull-C,.pull-O,.pull-c,.pull-o {
+  margin-left: -.04em;
+}
+
+.push-C,.push-O,.push-c,.push-o {
+  margin-right: .04em;
+}
+
+.pull-A {
+  margin-left: -.03em;
+}
+
+.push-A {
+  margin-right: .03em;
 }
