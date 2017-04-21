@@ -1,6 +1,8 @@
 $title-font: "Cooper Hewitt";
 $content-font: "DejaVu Serif Condensed L";
 $breakpoint-medium: 1100px;
+$breakpoint-small: 600px;
+$brick: rgb(184, 36, 72);
 
 html {
   font-size: 17px;
@@ -13,15 +15,17 @@ body {
 }
 
 main {
-  padding: 8rem 4rem;
+  padding: 8rem 6rem;
   max-width: 40rem;
   width: 100%;
   margin: 0 auto;
   position: relative;
-  right: 8rem;
+  right: 6rem;
 
   @media (max-width: $breakpoint-medium) {
     position: static;
+  }
+  @media (max-width: $breakpoint-small) {
     padding: 8rem 2rem;
   }
 }
@@ -32,6 +36,11 @@ main {
 
 header {
   padding-bottom: 6rem;
+  height: 24vh;
+  color: lighten($brick, 5%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,6 +52,10 @@ p {
   margin: 0;
   margin-bottom: 1rem;
   font-stretch: condensed;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .title {
@@ -75,11 +88,15 @@ p {
     font-size: 1.4rem;
     left: -2rem;
     top: -0.2rem;
-    color: rgb(184, 36, 72);
+    color: lighten($brick, 12%);;
 
     @media (max-width: $breakpoint-medium) {
       position: static;
       padding-right: 1.25rem;
     }
   }
+}
+
+blockquote {
+  padding: 1rem 0;
 }
