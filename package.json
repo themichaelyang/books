@@ -1,0 +1,17 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-typeset": "0.0.2"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
