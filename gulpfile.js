@@ -4,7 +4,7 @@ const sass = require('gulp-sass');
 // const concat = require('gulp-concat');
 
 const src = 'src/';
-const dist = 'dist/';
+const dist = '';
 
 const paths = {
   scss: src + '**/*.scss',
